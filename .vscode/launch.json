@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Temperatura",
+            "request": "launch",
+            "mainClass": "ex01.Temperatura",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Delta",
+            "request": "launch",
+            "mainClass": "ex02.Delta",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Media",
+            "request": "launch",
+            "mainClass": "ex03.Media",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario",
+            "request": "launch",
+            "mainClass": "ex04.Binario",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario2",
+            "request": "launch",
+            "mainClass": "ex04.Binario2",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Moedas",
+            "request": "launch",
+            "mainClass": "ex05.Moedas",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Aposentadoria",
+            "request": "launch",
+            "mainClass": "ex06.Aposentadoria",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Letra",
+            "request": "launch",
+            "mainClass": "ex07.Letra",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Especial",
+            "request": "launch",
+            "mainClass": "ex08.Especial",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Maior",
+            "request": "launch",
+            "mainClass": "ex09.Maior",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Remuneração",
+            "request": "launch",
+            "mainClass": "ex10.Remuneração",
+            "projectName": "projetos-java_dce80ea9"
+        }
+    ]
+}
