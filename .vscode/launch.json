@@ -4,7 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
+        {
+            "type": "java",
+            "name": "Sensor",
+            "request": "launch",
+            "mainClass": "ex11.Sensor",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex11.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
         {
             "type": "java",
             "name": "Current File",
