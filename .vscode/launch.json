@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Conjuntos",
+            "request": "launch",
+            "mainClass": "ex12.Conjuntos",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex12.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Sensor",
             "request": "launch",
             "mainClass": "ex11.Sensor",
