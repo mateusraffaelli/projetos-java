@@ -1,5 +1,3 @@
-package ex_switchcase;
-
 import java.util.Scanner;
 
 public class switchcase {
