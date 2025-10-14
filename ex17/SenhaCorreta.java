@@ -2,7 +2,7 @@ package ex17;
 
 import java.util.Scanner;
 
-public class App {
+public class SenhaCorreta {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
