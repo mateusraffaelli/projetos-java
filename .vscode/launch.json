@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex_algumacoisa.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "exalgumacoisa.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "switchcase",
+            "request": "launch",
+            "mainClass": "switchcase",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "calculador",
+            "request": "launch",
+            "mainClass": "calculador",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Fibonacci",
             "request": "launch",
             "mainClass": "ex20.Fibonacci",
