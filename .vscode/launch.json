@@ -8,6 +8,13 @@
             "type": "java",
             "name": "App",
             "request": "launch",
+            "mainClass": "ex15.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
             "mainClass": "ex14.App",
             "projectName": "projetos-java_dce80ea9"
         },
