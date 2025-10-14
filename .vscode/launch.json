@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex14.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Triangulo",
             "request": "launch",
             "mainClass": "ex13.Triangulo",
