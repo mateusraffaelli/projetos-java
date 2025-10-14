@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "ex20.Fibonacci",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Binario3",
             "request": "launch",
             "mainClass": "ex19.Binario3",
