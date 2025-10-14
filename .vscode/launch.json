@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App3",
+            "request": "launch",
+            "mainClass": "ex23.App3",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App2",
+            "request": "launch",
+            "mainClass": "ex22.App2",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex21.App",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex_novo.App",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "ex_algumacoisa.App",
