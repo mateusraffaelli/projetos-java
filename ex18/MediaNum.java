@@ -2,7 +2,7 @@ package ex18;
 
 import java.util.Scanner;
 
-public class App {
+public class MediaNum {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
@@ -16,7 +16,7 @@ public class App {
         while (n > 0) {
             System.out.println("Digite " + n + " números");
             x = leitor.nextDouble();
-            if (x > 5 && x < 10) {
+            if (x >= 5 && x <= 10) {
                 media = media + x;
                 i++;
             }
