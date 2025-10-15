@@ -2,7 +2,7 @@ package ex23;
 
 import java.util.Scanner;
 
-public class App3 {
+public class VerificacaoLoop {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
