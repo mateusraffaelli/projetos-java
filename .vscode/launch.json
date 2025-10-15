@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Igc",
+            "request": "launch",
+            "mainClass": "ex_IGC.Igc",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "App3",
             "request": "launch",
             "mainClass": "ex23.App3",
