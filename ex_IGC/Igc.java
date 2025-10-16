@@ -6,98 +6,84 @@ public class Igc {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
 
-        String sexo;
-        int igc;
-        boolean igcIdeal;
-        boolean atleta;
-        String mensagem;
-        int meses;
+        
+        int igc, icgMin, igcMax, igcNovo, meses;
+        String sexo, faixaIdeal;
+        boolean atleta, igcIdeal;
 
         System.out.println("Qual seu sexo?");
-        sexo = leitor.next();
+        sexo = leitor.next().toLowerCase();
         while (!(sexo.equals("homem") || sexo.equals("mulher"))){ // Garantindo que a resposta seja "homem" ou "mulher"
             System.out.println("Digite homem ou mulher");
-            sexo = leitor.next();
+            sexo = leitor.next().toLowerCase();
         }
         
         System.out.println("Qual o seu IGC?"); // IGC = Índice de gordura corporal (em %)
         igc = leitor.nextInt();
-        System.out.println("Você é atelta?");
-        atleta = leitor.nextBoolean(); // True = atleta, False = não atleta
 
+        System.out.println("Você é atleta? (true/false)");
+        atleta = leitor.nextBoolean(); 
 
-        igcIdeal = igc >= 10; //Garantindo que a variavel seja iniciada
-        mensagem = "10";
-        if (atleta == false) {
+        
+        if(atleta){
             if (sexo.equals("homem")) {
-                igcIdeal = igc >= 10 && igc <= 20;
-                mensagem = "10% e 20%";
-            } else if(sexo.equals("mulher")){
-                igcIdeal = igc >= 18 && igc <= 28;
-                mensagem = "18% e 28%";
+                icgMin = 6;
+                igcMax = 14;
+                faixaIdeal = "6% e 14%";
+            } else{
+                icgMin = 14;
+                igcMax = 21;
+                faixaIdeal = "14% e 21%";
             }
-            
-            if (igcIdeal == true) {
-                System.out.println("Você está saudável.");
-            }else if (igcIdeal == false){
-                System.out.println("Você não está saudável.");
-                System.out.println("A sua faixa de IGC deve ser entre " + mensagem);
-
-                System.out.println("Você deseja ficar saudável?");
-                mensagem = leitor.next();
-
-                if (mensagem.equals("sim")) { 
-                    System.out.println("Qual IGC você deseja alcançar?");
-                    igc = leitor.nextInt();
-                    
-                    if (igcIdeal == true) { // Verificando se igc está na faixa ideal
-                        System.out.println("Em quantos meses você espera atingir esse índice?");
-                        meses = leitor.nextInt();
-                        System.out.println("Você deve perder cerca de " + igc/meses + "% por mês");
-                    }else if(igcIdeal == false){
-                        System.out.println("Esse IGC não está na faixa ideal");
-                    }
-                    
-                }else{
-                    System.out.println("Fim");
-                }
-            }
-            
-        } else if(atleta == true){
+        } else {
             if (sexo.equals("homem")) {
-                igcIdeal = igc >= 6 && igc <= 14;
-                mensagem = "6% e 14%";
-            } else if(sexo.equals("mulher")){
-                igcIdeal = igc >= 14 && igc <= 21;
-                mensagem = "14% e 21%";
-            }
-
-            if (igcIdeal == true) {
-                System.out.println("Seu IGC está na faixa esperada para um atleta");
-            }else if(igcIdeal == false){
-                System.out.println("Seu IGC não está na faixa esperada.");
-                System.out.println("A faixa de IGC esperada para atletas é entre " + mensagem);
-
-                System.out.println("Você deseja atingir o IGC ideal?");
-                mensagem = leitor.next();
-
-                if (mensagem.equals("sim")) {
-                    System.out.println("Qual IGC você deseja alcançar?");
-                    igc = leitor.nextInt();
-
-                    if (igcIdeal == true) {
-                        System.out.println("Em quantos meses você espera atingir esse índice?");
-                        meses = leitor.nextInt();
-                        System.out.println("Você deve perder cerca de " + igc/meses + "% por mês");
-                    }else if(igcIdeal == false){
-                        System.out.println("Esse IGC não está na faixa ideal");
-                    }
-
-                }else{
-                    System.out.println("Fim");
-                }
+                icgMin = 10;
+                igcMax = 20;
+                faixaIdeal = "10% e 20%";
+            } else {
+                icgMin = 18;
+                igcMax = 28;
+                faixaIdeal = "18% e 28%";
             }
         }
+
+        igcIdeal = igc >= icgMin && igc <= igcMax;
+
+            
+        if (igcIdeal) {
+            System.out.println(atleta ? "Seu IGC está na faixa esperada para um atleta" : "Você está saudável."); 
+        }else{
+            System.out.println(atleta ? "Seu IGC não está na faixa esperada para um atleta" : "Você não está saudável");
+            System.out.println("A sua faixa de IGC ideal é entre " + faixaIdeal);
+
+            System.out.println("Você deseja ficar saudável? (sim/não)");
+            String resposta = leitor.next().toLowerCase();
+
+            if (resposta.equals("sim")) { 
+                System.out.println("Qual IGC você deseja alcançar?");
+                igcNovo = leitor.nextInt();
+                
+                if (igcNovo >= icgMin && igcNovo <= igcMax) { // Verificando se igc está na faixa ideal
+                    System.out.println("Em quantos meses você espera atingir esse índice?");
+                    meses = leitor.nextInt();
+
+                    if (meses > 0) {
+                        double percentualMensal = (double)(igc - igcNovo)/meses;
+                        System.out.println("Você deve perder cerca de " + percentualMensal + "% por mês");
+                    }else{
+                        System.out.println("Número de meses inválido");
+                    }
+                    
+                }else {
+                    System.out.println("Esse IGC não está na faixa ideal (" + faixaIdeal + ")");
+                }
+                
+            }else{
+                System.out.println("Fim");
+            }
+        }
+            
+        
         leitor.close();
     }
 }
