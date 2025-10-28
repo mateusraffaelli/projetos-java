@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Notas",
+            "request": "launch",
+            "mainClass": "ex27.Notas",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "ArraySoma",
+            "request": "launch",
+            "mainClass": "ex26.ArraySoma",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "ex24.Fibonacci",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Igc",
             "request": "launch",
             "mainClass": "ex_IGC.Igc",
