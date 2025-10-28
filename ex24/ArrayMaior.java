@@ -1,21 +1,25 @@
 package ex24;
 
+import java.util.Scanner;
+
 public class ArrayMaior {
     public static void main(String[] args) {
-        double[] n1 = new double[10];
-            n1[0] = 3.7;
-            n1[1] = 5.2; 
-            // ...
-            n1[9] = 7;
-                
-        double n2[ ] = {0,1,2,3,4,5,6,7,8,9};
+        Scanner sc = new Scanner(System.in);
 
-        double maior = n2[0]; //Maior elemento
-        for (int i = 1; i < 10; i++) {
-            if (n2[i] > maior) {
-                maior = n2[i];
+        double[] n1 = new double[10];
+        double maior = n1[0]; //Maior elemento
+
+        for (int i = 0; i < n1.length; i++) {
+            System.out.println("Digite o termo, restam " + (n1.length-i) + " termos");
+            n1[i] = sc.nextDouble();
+            if (n1[i] > maior) {
+                maior = n1[i];
             }
         }
+
+        System.out.println("O maior número é: " + maior);
+
+        sc.close();
     }
 
 }

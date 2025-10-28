@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayMaior",
+            "request": "launch",
+            "mainClass": "ex24.ArrayMaior",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "Notas",
             "request": "launch",
             "mainClass": "ex27.Notas",
