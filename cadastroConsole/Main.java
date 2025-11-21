@@ -85,7 +85,49 @@ public class Main {
                 break;
             
             case 4:
-                
+                System.out.println("");
+                System.out.println("Digite a descrição da tarefa que deseja atualizar:");
+                String descricaoAtualizar = scanner.nextLine();
+
+                Tarefa tarefaAtualizar = repositorio.buscarPorDescricao(descricaoAtualizar);
+
+                if (tarefaAtualizar == null) {
+                    System.out.println("Tarefa não encontrada");
+                } else {
+                    System.out.println("");
+                    System.out.println("=== ATUALIZAR TAREFA ===");
+                    System.out.println("1. Alterar descrição");
+                    System.out.println("2. Marcar como concluída");
+                    System.out.println("3. Marcar como não concluída");
+                    int opcaoAtualizar = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (opcaoAtualizar) {
+                        case 1:
+                            System.out.println("Digite a nova descrição:");
+                            String novaDescricao = scanner.nextLine();
+                            tarefaAtualizar.setDescricao(novaDescricao);
+                            System.out.println("Descrição atualizada!");
+                            break;
+
+                        case 2:
+                            tarefaAtualizar.setConcluida(true);
+                            System.out.println("Tarefa marcada como concluída");
+                            break;
+
+                        case 3:
+                            tarefaAtualizar.setConcluida(false);
+                            System.out.println("Tarefa marcada como pendente");
+                            break;
+                    
+                        default:
+                            System.out.println("Opção inválida");
+                            break;
+                    }
+
+                    System.out.println("");
+                }
+
                 break;
 
             case 5:

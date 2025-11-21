@@ -37,7 +37,7 @@ public class Tarefa {
         this.descricao = descricao;
     }
 
-    public void serConcluida(boolean concluida){
+    public void setConcluida(boolean concluida){
         this.concluida = concluida;
     }
     
