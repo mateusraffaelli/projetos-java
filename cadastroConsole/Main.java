@@ -131,7 +131,32 @@ public class Main {
                 break;
 
             case 5:
-                
+                System.out.println("");
+                System.out.println("=== REMOVER TAREFA ===");
+                System.out.println("Digite a descrição da tarefa que deseja remover:");
+                String descricaoRemover = scanner.nextLine();
+
+                Tarefa tarefaRemover = repositorio.buscarPorDescricao(descricaoRemover);
+
+                if (tarefaRemover == null) {
+                    System.out.println("Tarefa não encontrada");
+                } else {
+                    System.out.println("Tarefa encontrada:");
+                    System.out.println("ID: " + tarefaRemover.getId() + " - " + tarefaRemover.getDescricao());
+                    System.out.println("");
+                    System.out.println("Tem certeza que deseja remover essa tarefa? (sim/não)");
+                    String confirmacao = scanner.nextLine();
+                    
+                    if (confirmacao.equalsIgnoreCase("sim")) {
+                        repositorio.remover(descricaoRemover);
+                        System.out.println("");
+                        System.out.println("Tarefa removida");
+                    } else {
+                        break;
+                    }
+                }
+
+                System.out.println("");
                 break;
 
             case 6:
