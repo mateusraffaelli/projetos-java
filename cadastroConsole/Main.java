@@ -64,7 +64,24 @@ public class Main {
                 break;
 
             case 3:
+                System.out.println("");
+                System.out.println("Digite a descrição da tarefa");
+                String buscarPorDescricao = scanner.nextLine();
+
+                Tarefa tarefaEncontrada = repositorio.buscarPorDescricao(buscarPorDescricao);
+
+                if (tarefaEncontrada == null) {
+                    System.out.println("Tarefa não encontrada");
+                } else {
+                    System.out.println("");
+                    System.out.println("=== DETALHES DA TAREFA ===");
+                    System.out.println("ID: " + tarefaEncontrada.getId());
+                    System.out.println("Descrição: " + tarefaEncontrada.getDescricao());
+                    System.out.println("Data de criação: " + tarefaEncontrada.getDataCriacao());
+                    System.out.println("Status: " + (tarefaEncontrada.isConcluida() ? "Concluída" : "Pendente"));
+                }
                 
+                System.out.println("");
                 break;
             
             case 4:
