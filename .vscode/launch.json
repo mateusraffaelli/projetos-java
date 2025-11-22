@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AdivinheNum",
+            "request": "launch",
+            "mainClass": "AdivinheNum",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Faltar",
+            "request": "launch",
+            "mainClass": "faltar.Faltar",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "cadastroConsole.Main",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "ArrayMaior",
             "request": "launch",
             "mainClass": "ex24.ArrayMaior",
