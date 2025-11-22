@@ -8,6 +8,13 @@
             "type": "java",
             "name": "AdivinheNum",
             "request": "launch",
+            "mainClass": "jogos.AdivinheNum",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "AdivinheNum",
+            "request": "launch",
             "mainClass": "AdivinheNum",
             "projectName": "projetos-java_dce80ea9"
         },
