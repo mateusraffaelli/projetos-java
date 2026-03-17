@@ -1,0 +1,315 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AdivinheNum",
+            "request": "launch",
+            "mainClass": "jogos.AdivinheNum",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "AdivinheNum",
+            "request": "launch",
+            "mainClass": "AdivinheNum",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Faltar",
+            "request": "launch",
+            "mainClass": "faltar.Faltar",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "cadastroConsole.Main",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "ArrayMaior",
+            "request": "launch",
+            "mainClass": "ex24.ArrayMaior",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Notas",
+            "request": "launch",
+            "mainClass": "ex27.Notas",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "ArraySoma",
+            "request": "launch",
+            "mainClass": "ex26.ArraySoma",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "ex24.Fibonacci",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Igc",
+            "request": "launch",
+            "mainClass": "ex_IGC.Igc",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App3",
+            "request": "launch",
+            "mainClass": "ex23.App3",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App2",
+            "request": "launch",
+            "mainClass": "ex22.App2",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex21.App",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex_novo.App",
+            "projectName": "projetos-java_8122aca"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex_algumacoisa.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "exalgumacoisa.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "switchcase",
+            "request": "launch",
+            "mainClass": "switchcase",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "calculador",
+            "request": "launch",
+            "mainClass": "calculador",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "ex20.Fibonacci",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario3",
+            "request": "launch",
+            "mainClass": "ex19.Binario3",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario4",
+            "request": "launch",
+            "mainClass": "ex19.Binario4",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex19.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex18.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex17.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex16.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex15.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex14.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Triangulo",
+            "request": "launch",
+            "mainClass": "ex13.Triangulo",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Conjuntos",
+            "request": "launch",
+            "mainClass": "ex12.Conjuntos",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex12.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Sensor",
+            "request": "launch",
+            "mainClass": "ex11.Sensor",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "ex11.App",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Temperatura",
+            "request": "launch",
+            "mainClass": "ex01.Temperatura",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Delta",
+            "request": "launch",
+            "mainClass": "ex02.Delta",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Media",
+            "request": "launch",
+            "mainClass": "ex03.Media",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario",
+            "request": "launch",
+            "mainClass": "ex04.Binario",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Binario2",
+            "request": "launch",
+            "mainClass": "ex04.Binario2",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Moedas",
+            "request": "launch",
+            "mainClass": "ex05.Moedas",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Aposentadoria",
+            "request": "launch",
+            "mainClass": "ex06.Aposentadoria",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Letra",
+            "request": "launch",
+            "mainClass": "ex07.Letra",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Especial",
+            "request": "launch",
+            "mainClass": "ex08.Especial",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Maior",
+            "request": "launch",
+            "mainClass": "ex09.Maior",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Remuneração",
+            "request": "launch",
+            "mainClass": "ex10.Remuneração",
+            "projectName": "projetos-java_dce80ea9"
+        }
+    ]
+}
