@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/desafio-alura.iml" filepath="$PROJECT_DIR$/desafio-alura.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/desafio-alura.main.iml" filepath="$PROJECT_DIR$/.idea/modules/desafio-alura.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/desafio-alura.test.iml" filepath="$PROJECT_DIR$/.idea/modules/desafio-alura.test.iml" />
+=======
+>>>>>>> refs/remotes/origin/main
       <module fileurl="file://$PROJECT_DIR$/projetos-java.iml" filepath="$PROJECT_DIR$/projetos-java.iml" />
     </modules>
   </component>
