@@ -65,6 +65,8 @@ public class AdivinheNum {
                 }
                 numTentativas++;
 
+                System.out.println("");
+                System.out.println("Escolha outro número:");
                 tentativa = scanner.nextInt();
             }
 

@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Pessoa",
+            "request": "launch",
+            "mainClass": "ex28.Pessoa",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "Teste",
+            "request": "launch",
+            "mainClass": "jogos.Teste",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "BatalhaNaval",
+            "request": "launch",
+            "mainClass": "jogos.BatalhaNaval",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
+            "name": "PedraPapelTesoura",
+            "request": "launch",
+            "mainClass": "jogos.PedraPapelTesoura",
+            "projectName": "projetos-java_dce80ea9"
+        },
+        {
+            "type": "java",
             "name": "AdivinheNum",
             "request": "launch",
             "mainClass": "jogos.AdivinheNum",
