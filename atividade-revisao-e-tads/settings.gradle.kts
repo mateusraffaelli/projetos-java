@@ -1,0 +1,1 @@
+rootProject.name = "atividade-revisao-e-tads"
