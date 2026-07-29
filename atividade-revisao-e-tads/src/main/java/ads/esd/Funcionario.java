@@ -12,15 +12,15 @@ public class Funcionario {
     }
 
     public void calcularSalario(boolean finalizado){
-        salarioFinal = finalizado? salarioFinal*1.1 : salarioFinal;
+        salarioFinal = salarioBase;
+
+        if (finalizado) {
+            salarioFinal += salarioBase * 0.10;
+        }
     }
 
     public String getNome() {
         return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public double getSalarioBase() {

@@ -6,34 +6,36 @@ public class Projeto {
     private String nome;
     private Gerente gerente;
     private ArrayList<Funcionario> funcionarios;
+    private double custo;
 
-    public Projeto(String nome, Gerente gerente, ArrayList<Funcionario> funcionarios) {
+    public Projeto(String nome, Gerente gerente, ArrayList<Funcionario> funcionarios,  boolean finalizado) {
         this.nome = nome;
         this.gerente = gerente;
         this.funcionarios = funcionarios;
-    }
 
-    public void calcularSalario(boolean finalizado){
-        gerente.setSalarioFinal(gerente.getSalarioBase()+ 0.01 * funcionarios.size());
-        for(Funcionario f : funcionarios) {
-            f.setSalarioFinal(f.getSalarioBase());
-        }
+        gerente.calcularSalario(finalizado);
 
-        if (finalizado){
-            gerente.setSalarioFinal(gerente.getSalarioFinal()*1.1);
-            for(Funcionario f : funcionarios) {
-                f.setSalarioFinal(f.getSalarioFinal()*1.1);
-            }
+        for (Funcionario f : funcionarios) {
+            f.calcularSalario(finalizado);
+            this.custo += f.getSalarioFinal();
         }
+        custo += gerente.getSalarioFinal();
     }
 
     @Override
     public String toString() {
-        return "Projeto: " + nome +
-                "\nGerente: " + gerente +
-                "\nSalário gerente: R$" + gerente.getSalarioFinal() +
-                "\nLista de funcionários: " + funcionarios +
-                "\nSalário dos funcionários: R$" + funcionarios +
-                "\nCusto total: R$" + gerente.getSalarioFinal() + funcionarios.get(0).getSalarioFinal()*funcionarios.size();
+        StringBuilder sb = new StringBuilder();
+        sb.append("Projeto: ").append(nome)
+                .append("\nGerente: ").append(gerente.getNome())
+                .append("\nSalário gerente: R$").append(gerente.getSalarioFinal());
+
+        for (Funcionario f : funcionarios) {
+            sb.append("\nFuncionario: ").append(f.getNome());
+            sb.append("\nSalário: R$").append(f.getSalarioFinal());
+        }
+
+        sb.append("\nCusto total: R$").append(custo);
+
+        return sb.toString();
     }
 }
