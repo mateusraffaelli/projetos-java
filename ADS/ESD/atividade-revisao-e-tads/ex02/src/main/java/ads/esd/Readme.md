@@ -13,6 +13,9 @@ classDiagram
         - nome: String
         - cpf: String
         - telefone: String
+        - contratos: List~Contrato~
+        + adicionarContrato(Contrato contrato) void
+        + exibirHistorico() String
     }
         
     class Contrato{
@@ -22,6 +25,8 @@ classDiagram
         - valorFinal: double
         - cliente: Cliente
         - imovel: Imovel
+        + exibirDetalhesImovel() String
+        + exibirNomeInquilino() String
     }
         
     

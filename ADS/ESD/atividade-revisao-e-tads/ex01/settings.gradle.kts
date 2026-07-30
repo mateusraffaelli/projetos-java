@@ -1,1 +1,1 @@
-rootProject.name = "atividade-revisao-e-tads"
+rootProject.name = "ex01"

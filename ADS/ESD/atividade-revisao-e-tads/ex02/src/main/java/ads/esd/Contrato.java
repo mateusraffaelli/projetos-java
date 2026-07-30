@@ -17,6 +17,8 @@ public class Contrato {
         this.cliente = cliente;
         this.imovel = imovel;
         this.codigo = gerarCodigoAleatorio();
+
+        this.cliente.adicionarContrato(this);
     }
 
     private int gerarCodigoAleatorio(){
@@ -27,15 +29,31 @@ public class Contrato {
         return (centena*100) + (dezena*10) + unidade;
     }
 
-    @Override
-    public String toString() {
+    public double getValorFinal() {
+        return valorFinal;
+    }
+
+    public String getDataFinal() {
+        return dataFinal;
+    }
+
+    public String getDataInicio() {
+        return dataInicio;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String exibirDetalhesImovel(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Codigo: ").append(codigo);
-        sb.append("\nData de início: ").append(dataInicio);
-        sb.append("\nData de Término: ").append(dataFinal);
-        sb.append("\nValor Final: R$").append(valorFinal);
-        sb.append("\nDetalhes do imóvel: ").append(imovel.getDescricao());
-        sb.append("\nNome Inquilino: ").append(cliente.getNome());
+        sb.append("Detalhes do imóvel: ").append(imovel.getDescricao());
+        return sb.toString();
+    }
+
+    public String exibirNomeInquilino(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nome Inquilino: ").append(cliente.getNome());
         return sb.toString();
     }
 }
