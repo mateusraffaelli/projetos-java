@@ -63,6 +63,28 @@ public class VetorEstatico {
         System.out.println("]");
     }
 
+    public void remover(int indice){
+        if (indice < 0 || indice >= tamanho){
+            System.out.println("Indice inválido");
+            return;
+        }
+
+        for (int i = 0; i < tamanho; i++) {
+            elementos[i] = elementos[i + 1];
+        }
+
+        elementos[tamanho - 1] = null;
+        tamanho--;
+    }
+
+    public void remover(String elemento){
+        for (int i = 0; i < tamanho; i++) {
+            if (elementos[i].equals(elemento)){
+                remover(i);
+            }
+        }
+    }
+
     public int getTamanho() {
         return tamanho;
     }
