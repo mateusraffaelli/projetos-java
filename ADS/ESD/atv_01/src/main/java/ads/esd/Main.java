@@ -2,7 +2,7 @@ package ads.esd;
 
 public class Main {
     public static void main(String[] args) {
-        Agenda agenda = new Agenda(5);
+        Agenda agenda = new Agenda(6);
 
         Contato c1 = new Contato("Ana", "(11) 98765-4321", "ana@email.com");
         Contato c2 = new Contato("Carlos", "(21) 91234-5678", "carlos@email.com");
@@ -16,12 +16,23 @@ public class Main {
         agenda.adicionar(c4);
         agenda.adicionar(c5);
 
-        Contato c6 = new Contato("Ana", "(11) 98765-4321", "ana@email.com");
+        Contato c6 = new Contato("Ana", "(12) 98765-4321", "analaura@email.com");
         agenda.adicionar(c6);
 
-        agenda.remover(c1);
-//        agenda.adicionar(c1); verificar erro
-        agenda.buscar();
+//        agenda.remover(c1);
+//        agenda.remover(c2);
+//        agenda.remover(c6);
+
+        // agenda.adicionar(c1); verificar erro
+        //Manipulação em lote: Inserir vários contatos de uma vez.
+        // EMAIL NAO É OBRIGATORIO
+
+//        agenda.buscar("João Pedro");
+//        agenda.buscar("(21) 91234-5678");
+        // agenda.buscar("Ana ");
+
+        // agenda.atualizar(c5);
+         agenda.listar();
 
 
 
